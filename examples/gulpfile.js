@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var html2js = require('../');
 
 gulp.task('default', function () {
-    gulp.src('templates/*.html')
+    gulp.src('templates/**/*.html')
         .pipe(html2js('js-demo.js', {
             adapter: 'javascript',
             name: 'demo',
